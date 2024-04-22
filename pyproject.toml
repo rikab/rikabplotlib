@@ -6,7 +6,7 @@ requires = [
 build-backend = "hatchling.build"
 
 [project]
-name = "rikabtools"
+name = "rikabplotlib"
 version = "0.0.1"
 description = "Plotting Library for Rikab"
 readme = "README.md"
