@@ -7,7 +7,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "rikabplotlib"
-version = "0.0.1"
+dynamic = ["version"]
 description = "Plotting Library for Rikab"
 readme = "README.md"
 license = { text = "MIT" }  # SPDX short identifier
