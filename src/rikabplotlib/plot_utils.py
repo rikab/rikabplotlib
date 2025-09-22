@@ -13,7 +13,7 @@ COLUMN_WIDTH_INCHES = COLUMN_WIDTH_PX / DPI
 
 GOLDEN_RATIO = 1.618
 
-def newplot(scale = None, subplot_array = None, width = None, height = None, aspect_ratio = 1,  golden_ratio = False, stamp = None, stamp_kwargs = None, **kwargs):
+def newplot(scale = None, subplot_array = None, width = None, height = None, aspect_ratio = 1,  golden_ratio = False, stamp = None, stamp_kwargs = None, use_tex = True, **kwargs):
 
 
     # Determine plot aspect ratio
@@ -27,6 +27,15 @@ def newplot(scale = None, subplot_array = None, width = None, height = None, asp
         fig_width = FULL_WIDTH_INCHES / aspect_ratio
         fig_height = FULL_WIDTH_INCHES 
         plt.style.use('rikabplotlib.rikab_full')
+
+
+
+        if use_tex:
+            plt.style.use('rikabplotlib.rikab_full')
+
+        else:
+            plt.style.use('rikabplotlib.rikab_full_notex')
+
 
     elif scale == "column":
         fig_width = COLUMN_WIDTH_INCHES / aspect_ratio
