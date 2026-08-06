@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+build/
+dist/
+*.egg-info/
+.coverage
+src/rikabplotlib/_version.py

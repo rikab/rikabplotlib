@@ -31,6 +31,7 @@ axes.linewidth : 2.5
 grid.linewidth : 1
 lines.linewidth : 3
 lines.solid_capstyle : round
+lines.markersize : 5
 
 # Font style
 text.usetex : False
